@@ -1,5 +1,5 @@
 import StartWindow from "./StartWindow";
-import DeckOfQuestions from "./DeckOfQuestions";
+import DeckOfQuestions from "./Card/DeckOfCards";
 import Header from "./Header";
 import React from "react";
 

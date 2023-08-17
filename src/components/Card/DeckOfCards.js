@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Card from "./Card";
 import React from "react";
 
@@ -5,6 +6,7 @@ export default function DeckOfQuestions() {
   function comparator() {
     return Math.random() - 0.5;
   }
+
   const cards = [
     {
       question: "O que é React?",
@@ -21,7 +23,7 @@ export default function DeckOfQuestions() {
       answer: "gerenciar os pacotes necessários e suas dependências",
     },
     {
-      question: "Usamos props para __",
+      question: "Usamos para __",
       answer: "passar diferentes informações para componentes ",
     },
     {
@@ -30,13 +32,21 @@ export default function DeckOfQuestions() {
         "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
     },
   ];
+  const cardsLength = cards.length;
   const sortCards = cards.sort(comparator);
+
+  const [aswrIcons, setaswrIcons] = React.useState([]);
+
+  function Icons(icon) {
+    setaswrIcons([...aswrIcons, icon]);
+  }
 
   return (
     <>
       {sortCards.map((card, index) => (
-        <Card card={card} index={index} />
+        <Card key={index} card={card} index={index} Icons={Icons} />
       ))}
+      <Footer aswrIcons={aswrIcons} cardsLength={cardsLength} />
     </>
   );
 }

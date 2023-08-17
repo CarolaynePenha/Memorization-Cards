@@ -18,6 +18,8 @@ font-family: 'Roboto', sans-serif; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin-bottom: 30%;
 }
 /* ---------------------header */
 header img {
@@ -68,7 +70,7 @@ header img {
 .card-front p {
   font-family: "Righteous", cursive;
   font-size: 25px;
-  color: #f8941d;
+  color: #032535;
   font-weight: 400;
   position: relative;
 }
@@ -79,6 +81,148 @@ header img {
 }
 /* ------------------------Questions */
 .question {
+  height: 150px;
+  width: 100%;
+  background-color: #a9bfc2b7;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: none;
+  filter: drop-shadow(3px 5px 5px #0325357c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.question p {
+  width: 80%;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+  text-shadow: 2px -2px 3px #f4f1f1;
+  color: #032535;
+  font-weight: 400;
+  position: relative;
+  text-align: start;
+}
+
+.question img {
+  width: 25px;
+  position: absolute;
+  right: 20px;
+}
+/* ------------------------ answer */
+.answer {
+  height: 150px;
+  width: 100%;
+  background-color: #a9bfc2b7;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: none;
+  filter: drop-shadow(3px 5px 5px #0325357c);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.answer p {
+  width: 80%;
+  margin: 10px 10px;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+  text-shadow: 1px -1px 4px #f9f6f6;
+  color: #032535;
+  font-weight: 400;
+  position: relative;
+  text-align: start;
+}
+/* botoes de opções */
+.options {
+  width: 100%;
+  display: flex;
+}
+.options button {
+  font-family: "Roboto", sans-serif;
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.options p {
+  font-size: 15px;
+  margin: 0px;
+  color: #ffffff;
+  text-shadow: 1px -1px 4px #000000;
+}
+.negative-option {
+  background-color: rgb(197, 4, 4);
+}
+.middle-option {
+  background-color: #f08809;
+}
+.positive-option {
+  background-color: #088c4e;
+}
+
+.negative p {
+  color: red;
+  text-decoration: line-through red;
+}
+.negative ion-icon {
+  color: red;
+}
+.middle p {
+  color: #d8ae2d;
+  text-decoration: line-through #d8ae2d;
+}
+.middle ion-icon {
+  color: #d8ae2d;
+}
+.positive p {
+  color: #088c4e;
+  text-decoration: line-through #088c4e;
+}
+.positive ion-icon {
+  color: #088c4e;
+}
+/*---------------------------------- Footer */
+footer {
+  width: 100%;
+  height: 15%;
+  background-color: #f4f1f1;
+  filter: drop-shadow(3px 5px 5px #0325357c);
+  position: fixed;
+  bottom: 0px;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #032535;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.result {
+  height: 40%;
+}
+.title-result {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+.title-result img {
+  margin-left: 15px;
+  width: 25px;
 }
 /* utilitarios */
 .hide {
