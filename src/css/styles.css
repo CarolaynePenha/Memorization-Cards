@@ -113,6 +113,7 @@ header img {
 /* ------------------------ answer */
 .answer {
   height: 250px;
+  min-height: fit-content;
   width: 100%;
   background-color: #a9bfc2b7;
   margin: 10px 0px;
