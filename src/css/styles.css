@@ -81,7 +81,7 @@ header img {
 }
 /* ------------------------Questions */
 .question {
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-color: #a9bfc2b7;
   margin: 10px 0px;
@@ -112,7 +112,7 @@ header img {
 }
 /* ------------------------ answer */
 .answer {
-  height: 150px;
+  height: 250px;
   width: 100%;
   background-color: #a9bfc2b7;
   margin: 10px 0px;
@@ -121,8 +121,8 @@ header img {
   filter: drop-shadow(3px 5px 5px #0325357c);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
+  justify-content: center;
   position: relative;
 }
 
@@ -144,8 +144,9 @@ header img {
 }
 .options button {
   font-family: "Roboto", sans-serif;
-  width: 30%;
-  height: 100%;
+  width: 200px;
+  min-height: fit-content;
+  height: 60px;
   margin-left: 10px;
   border-radius: 10px;
 }
