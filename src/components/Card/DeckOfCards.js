@@ -23,7 +23,7 @@ export default function DeckOfQuestions() {
       answer: "gerenciar os pacotes necessários e suas dependências",
     },
     {
-      question: "Usamos para __",
+      question: "Usamos props para __",
       answer: "passar diferentes informações para componentes ",
     },
     {
